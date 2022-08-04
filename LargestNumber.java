@@ -1,24 +1,19 @@
-package biggestnumber;
+
 
 import java.util.Scanner;
-
-public class biggestnumber {
-
+public class LargestNumber {
     public static void main(String[] args) {
-        Scanner r = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         System.out.println("Enter first number: ");
-        int num1 = r.nextInt();
+        int num1 = scn.nextInt();
         System.out.println("Enter second number: ");
-        int num2 = r.nextInt();
+        int num2 = scn.nextInt();
         System.out.println("Enter third number: ");
-        int num3 = r.nextInt();
+        int num3 = scn.nextInt();
         
         int result = (num1 > num2 && num1 > num3) ? num1
         : (num2 > num1 && num2 > num3) ? num2
-        : num3;
-        
-        System.out.println("Biggest number is " + result);
-
-    }
-    
+        : num3;       
+        System.out.println("Largest number is " + result);
+    }    
 }

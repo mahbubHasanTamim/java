@@ -1,16 +1,14 @@
-   
+// Grade নির্ণয়ের প্রোগ্রাম
 import java.util.Scanner;
-
-public class Hello{
+public class Grade{
 
     public static void main(String[]args){
         
-        Scanner r = new Scanner(System.in);
-
-        System.out.println("Enter Marks:");
-        int mark = r.nextInt();
-
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter Your Marks: ");
+        int mark = scn.nextInt();
         String grade = null;
+
         switch(mark/10){
             case 10:
             case 9:
@@ -38,6 +36,6 @@ public class Hello{
                 grade = "F";
                 break;            
         }
-        System.out.println("Your Grade is " + grade);
+        System.out.println("Your Grade is: " + grade);
     }
 }
